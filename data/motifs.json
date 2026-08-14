@@ -1,0 +1,230 @@
+[
+  {
+    "id": "mst0bef1uot6i",
+    "region": "kalocsa",
+    "complexity": "Egyszerű",
+    "type": "virág, rózsa",
+    "name": "Kalocsai rózsa",
+    "color": "piros, vörös",
+    "desc": "",
+    "svg": "assets/mst0bef1uot6i.svg",
+    "png": null,
+    "gcode": "gcode/mst0bef1uot6i.gcode",
+    "i18n": {
+      "hu": {
+        "name": "Kalocsai rózsa",
+        "region": "kalocsa",
+        "complexity": "Egyszerű",
+        "type": "virág, rózsa",
+        "color": "piros, vörös",
+        "description": ""
+      },
+      "en": {
+        "name": "Kalocsa Rose",
+        "region": "kalocsa",
+        "complexity": "Simple",
+        "type": "virág, rózsa",
+        "color": "piros, vörös",
+        "description": ""
+      },
+      "es": {
+        "name": "Rosa de Kalocsa",
+        "region": "kalocsa",
+        "complexity": "Sencillo",
+        "type": "virág, rózsa",
+        "color": "piros, vörös",
+        "description": ""
+      }
+    }
+  },
+  {
+    "id": "mst0diyk81gvy",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "Egyszerű",
+    "type": "virág, tulipán",
+    "name": "Matyó Tulipán",
+    "color": "Piros, sárga, vörös",
+    "desc": "",
+    "svg": "assets/mst0diyk81gvy.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "name": "Matyó Tulipán",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Egyszerű",
+        "type": "virág, tulipán",
+        "color": "Piros, sárga, vörös",
+        "description": ""
+      },
+      "en": {
+        "name": "Matyó Tulip",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Simple",
+        "type": "virág, tulipán",
+        "color": "Piros, sárga, vörös",
+        "description": ""
+      },
+      "es": {
+        "name": "Tulipán Matyó",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Sencillo",
+        "type": "virág, tulipán",
+        "color": "Piros, sárga, vörös",
+        "description": ""
+      }
+    }
+  },
+  {
+    "id": "mst0i4odzr6y4",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "Közepes",
+    "type": "Virág, csokor, összetett motívum",
+    "name": "Forgórózsás csokor",
+    "color": "piros, sárga, kák, zöld",
+    "desc": "",
+    "svg": "assets/mst0i4odzr6y4.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "name": "Forgórózsás csokor",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Közepes",
+        "type": "Virág, csokor, összetett motívum",
+        "color": "piros, sárga, kák, zöld",
+        "description": ""
+      },
+      "en": {
+        "name": "Rotating Rose Bouquet",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Medium",
+        "type": "Virág, csokor, összetett motívum",
+        "color": "piros, sárga, kák, zöld",
+        "description": ""
+      },
+      "es": {
+        "name": "Ramo de Rosas Giratorias",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Medio",
+        "type": "Virág, csokor, összetett motívum",
+        "color": "piros, sárga, kák, zöld",
+        "description": ""
+      }
+    }
+  },
+  {
+    "id": "mst0jtxjgmhkv",
+    "region": "KAlocsa",
+    "complexity": "Közepes",
+    "type": "virág, szár",
+    "name": "KAlocsai rózsa szárral",
+    "color": "piros, vörös, sötétzöls, világoszöld",
+    "desc": "",
+    "svg": "assets/mst0jtxjgmhkv.svg",
+    "png": null,
+    "gcode": "gcode/mst0jtxjgmhkv.gcode",
+    "i18n": {
+      "hu": {
+        "name": "KAlocsai rózsa szárral",
+        "region": "KAlocsa",
+        "complexity": "Közepes",
+        "type": "virág, szár",
+        "color": "piros, vörös, sötétzöls, világoszöld",
+        "description": ""
+      },
+      "en": {
+        "name": "KAlocsai rózsa szárral",
+        "region": "KAlocsa",
+        "complexity": "Medium",
+        "type": "virág, szár",
+        "color": "piros, vörös, sötétzöls, világoszöld",
+        "description": ""
+      },
+      "es": {
+        "name": "KAlocsai rózsa szárral",
+        "region": "KAlocsa",
+        "complexity": "Medio",
+        "type": "virág, szár",
+        "color": "piros, vörös, sötétzöls, világoszöld",
+        "description": ""
+      }
+    }
+  },
+  {
+    "id": "mst0nyucink7j",
+    "region": "kalocsa",
+    "complexity": "Egyszerű",
+    "type": "rózsa, virág",
+    "name": "kalocsdai rózsa rózsaszín",
+    "color": "rozsaszín, világosrozsaszín",
+    "desc": "",
+    "svg": "assets/mst0nyucink7j.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "name": "kalocsdai rózsa rózsaszín",
+        "region": "kalocsa",
+        "complexity": "Egyszerű",
+        "type": "rózsa, virág",
+        "color": "rozsaszín, világosrozsaszín",
+        "description": ""
+      },
+      "en": {
+        "name": "kalocsdai rózsa rózsaszín",
+        "region": "kalocsa",
+        "complexity": "Simple",
+        "type": "rózsa, virág",
+        "color": "rozsaszín, világosrozsaszín",
+        "description": ""
+      },
+      "es": {
+        "name": "kalocsdai rózsa rózsaszín",
+        "region": "kalocsa",
+        "complexity": "Sencillo",
+        "type": "rózsa, virág",
+        "color": "rozsaszín, világosrozsaszín",
+        "description": ""
+      }
+    }
+  },
+  {
+    "id": "mst0pirdtr5zg",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "Közepes",
+    "type": "Virág, Levél",
+    "name": "Harangvirág, dupla macskatalp",
+    "color": "piros, zöld, vörös, sárga",
+    "desc": "",
+    "svg": "assets/mst0pirdtr5zg.svg",
+    "png": null,
+    "gcode": "gcode/mst0pirdtr5zg.gcode",
+    "i18n": {
+      "hu": {
+        "name": "Harangvirág, dupla macskatalp",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Közepes",
+        "type": "Virág, Levél",
+        "color": "piros, zöld, vörös, sárga",
+        "description": ""
+      },
+      "en": {
+        "name": "Bellflower, Double Cat's Paw",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Medium",
+        "type": "Virág, Levél",
+        "color": "piros, zöld, vörös, sárga",
+        "description": ""
+      },
+      "es": {
+        "name": "Campanilla, Doble Pata de Gato",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Medio",
+        "type": "Virág, Levél",
+        "color": "piros, zöld, vörös, sárga",
+        "description": ""
+      }
+    }
+  }
+]
