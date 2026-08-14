@@ -1,0 +1,31 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Magyar Népi Hímzés – Katalógus</title><link rel="stylesheet" href="style.css">
+<style>
+#languageSwitcher{display:flex;gap:6px;align-items:center;margin:12px 0;flex-wrap:wrap}
+#languageSwitcher button{border:1px solid #A11D13;background:#F8E2DC;color:#A11D13;border-radius:8px;padding:7px 11px;font-weight:700;cursor:pointer}
+#languageSwitcher button.active,#languageSwitcher button:hover{background:#A11D13;color:#fff}
+</style>
+<script>
+window.CATALOG_LANG = {
+  hu:{name:"Magyar",search:"Keresés név, tájegység vagy típus szerint",allRegions:"Minden tájegység",allComplexity:"Minden komplexitás",allTypes:"Minden típus",download:"G-code letöltése",noGcode:"Nincs G-code ehhez a mintához.",noPng:"Ehhez a mintához nincs PNG kép.",complexity:"Komplexitás",type:"Típus",color:"Szín",region:"Tájegység",close:"Bezárás"},
+  en:{name:"English",search:"Search by name, region or type",allRegions:"All regions",allComplexity:"All complexity levels",allTypes:"All types",download:"Download G-code",noGcode:"No G-code available for this pattern.",noPng:"No PNG image for this pattern.",complexity:"Complexity",type:"Type",color:"Color",region:"Region",close:"Close"},
+  es:{name:"Español",search:"Buscar por nombre, región o tipo",allRegions:"Todas las regiones",allComplexity:"Todos los niveles de complejidad",allTypes:"Todos los tipos",download:"Descargar G-code",noGcode:"No hay G-code disponible para este motivo.",noPng:"No hay imagen PNG para este motivo.",complexity:"Complejidad",type:"Tipo",color:"Color",region:"Región",close:"Cerrar"}
+};
+function setCatalogLanguage(lang){
+  localStorage.setItem("catalogLanguage",lang);
+  document.documentElement.lang=lang;
+  document.querySelectorAll("#languageSwitcher button").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+  window.CURRENT_LANG=lang;
+  if(typeof renderLanguage==="function") renderLanguage(lang);
+  if(typeof render==="function") render();
+}
+function initLanguageSwitcher(){
+  const host=document.getElementById("languageSwitcher");
+  if(!host)return;
+  ["hu","en","es"].forEach(lang=>{
+    const b=document.createElement("button"); b.dataset.lang=lang; b.textContent={hu:"HU",en:"EN",es:"ES"}[lang];
+    b.onclick=()=>setCatalogLanguage(lang); host.appendChild(b);
+  });
+  setCatalogLanguage(localStorage.getItem("catalogLanguage")||"hu");
+}
+</script>
+</head><body><header><div class="wrap"><div class="ey">INGYENES MINTAKATALÓGUS</div><h1>Magyar népi hímzés</h1><p>Válassz egy motívumot a részletekhez.</p><div id="languageSwitcher"></div><div id="qr"></div></div></header><main class="wrap"><div id="filters"><input id="search" placeholder="Keresés név, tájegység vagy típus szerint"><select id="regionFilter"><option value="">Minden tájegység</option></select><select id="complexityFilter"><option value="">Minden komplexitás</option></select><select id="typeFilter"><option value="">Minden típus</option></select></div><div id="catalog" class="catalog"></div></main><div id="modal" hidden><div class="back" onclick="closeM()"></div><article class="modal"><button class="close" onclick="closeM()">×</button><div id="detail"></div></article></div><script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script><script src="app.js"></script><script>initLanguageSwitcher();</script></body></html>
