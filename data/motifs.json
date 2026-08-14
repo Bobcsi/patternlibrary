@@ -12,28 +12,28 @@
     "gcode": "gcode/mst0bef1uot6i.gcode",
     "i18n": {
       "hu": {
-        "name": "Kalocsai rózsa",
-        "region": "kalocsa",
-        "complexity": "Egyszerű",
-        "type": "virág, rózsa",
-        "color": "piros, vörös",
-        "description": ""
+        "név": "Kalocsai rózsa",
+        "régió": "Kalocsa",
+        "összetetség": "Egyszerű",
+        "típus": "virág, rózsa",
+        "szín": "piros, vörös",
+        "leírás": ""
       },
       "en": {
-        "name": "Kalocsa Rose",
-        "region": "kalocsa",
+        "name": "Rose from Kalocsa",
+        "region": "Kalocsa",
         "complexity": "Simple",
-        "type": "virág, rózsa",
-        "color": "piros, vörös",
+        "type": "flower, rose",
+        "color": "red, dark red",
         "description": ""
       },
       "es": {
-        "name": "Rosa de Kalocsa",
-        "region": "kalocsa",
-        "complexity": "Sencillo",
-        "type": "virág, rózsa",
-        "color": "piros, vörös",
-        "description": ""
+        "nombre": "Rosa de Kalocsa",
+        "zona": "Kalocsa",
+        "compljidad": "Sencillo",
+        "tipo": "flor, rosa",
+        "color": "rojo, rojo oscuro",
+        "descripción": ""
       }
     }
   },
@@ -50,28 +50,28 @@
     "gcode": null,
     "i18n": {
       "hu": {
-        "name": "Matyó Tulipán",
-        "region": "Mezőkövesd, Matyó",
-        "complexity": "Egyszerű",
-        "type": "virág, tulipán",
-        "color": "Piros, sárga, vörös",
-        "description": ""
+        "név": "Matyó Tulipán",
+        "régió": "Mezőkövesd, Matyó",
+        "összetettség": "Egyszerű",
+        "típus": "virág, tulipán",
+        "szín": "Piros, sárga, vörös",
+        "leírás": ""
       },
       "en": {
         "name": "Matyó Tulip",
         "region": "Mezőkövesd, Matyó",
         "complexity": "Simple",
-        "type": "virág, tulipán",
-        "color": "Piros, sárga, vörös",
+        "type": "flower, tulip",
+        "color": "red, yellow, dark red",
         "description": ""
       },
       "es": {
-        "name": "Tulipán Matyó",
-        "region": "Mezőkövesd, Matyó",
-        "complexity": "Sencillo",
-        "type": "virág, tulipán",
-        "color": "Piros, sárga, vörös",
-        "description": ""
+        "nombre": "Tulipán Matyó",
+        "región": "Mezőkövesd, Matyó",
+        "complejidad": "Sencillo",
+        "tipo": "flor, tulipán",
+        "color": "rojo, amarillo, rojo oscuro",
+        "descripción": ""
       }
     }
   },
@@ -88,28 +88,28 @@
     "gcode": null,
     "i18n": {
       "hu": {
-        "name": "Forgórózsás csokor",
-        "region": "Mezőkövesd, Matyó",
-        "complexity": "Közepes",
-        "type": "Virág, csokor, összetett motívum",
-        "color": "piros, sárga, kák, zöld",
-        "description": ""
+        "neve": "Forgórózsás csokor",
+        "région": "Mezőkövesd, Matyó",
+        "összetettség": "Közepes",
+        "típus": "Virág, csokor, összetett motívum",
+        "szín": "piros, sárga, kék, zöld",
+        "leírás": ""
       },
       "en": {
-        "name": "Rotating Rose Bouquet",
+        "name": "Whirl Rose Bouquet",
         "region": "Mezőkövesd, Matyó",
         "complexity": "Medium",
-        "type": "Virág, csokor, összetett motívum",
-        "color": "piros, sárga, kák, zöld",
+        "type": "flower, bouquet, complex motive",
+        "color": "red, yellow, blue, green",
         "description": ""
       },
       "es": {
-        "name": "Ramo de Rosas Giratorias",
-        "region": "Mezőkövesd, Matyó",
-        "complexity": "Medio",
-        "type": "Virág, csokor, összetett motívum",
-        "color": "piros, sárga, kák, zöld",
-        "description": ""
+        "nombre": "Ramo de Rosas Giratorias",
+        "zona": "Mezőkövesd, Matyó",
+        "complejidad": "Medio",
+        "tipo": "flor, ramo, motivo complejo",
+        "color": "rojo, amarillo, azul, verde",
+        "descripción": ""
       }
     }
   },
@@ -126,28 +126,28 @@
     "gcode": "gcode/mst0jtxjgmhkv.gcode",
     "i18n": {
       "hu": {
-        "name": "KAlocsai rózsa szárral",
-        "region": "KAlocsa",
-        "complexity": "Közepes",
-        "type": "virág, szár",
-        "color": "piros, vörös, sötétzöls, világoszöld",
-        "description": ""
+        "név": "Kalocsai rózsa szárral",
+        "régió": "Kalocsa",
+        "összetettség": "Közepes",
+        "típus": "virág, szár",
+        "szín": "piros, vörös, sötétzöld, világoszöld",
+        "leírás": ""
       },
       "en": {
-        "name": "KAlocsai rózsa szárral",
-        "region": "KAlocsa",
+        "name": "Rose and stem from Kalocsa",
+        "region": "Kalocsa",
         "complexity": "Medium",
-        "type": "virág, szár",
-        "color": "piros, vörös, sötétzöls, világoszöld",
+        "type": "flower, stem",
+        "color": "red, dark red, green, dark green",
         "description": ""
       },
       "es": {
-        "name": "KAlocsai rózsa szárral",
-        "region": "KAlocsa",
-        "complexity": "Medio",
-        "type": "virág, szár",
-        "color": "piros, vörös, sötétzöls, világoszöld",
-        "description": ""
+        "nombre": "Rosa y tallo de Kalocsa",
+        "zona": "Kalocsa",
+        "complejidad": "Medio",
+        "tipo": "flor, tallo",
+        "color": "rojo, rojo oscuro, verde, verde oscuro",
+        "descripción": ""
       }
     }
   },
@@ -164,28 +164,28 @@
     "gcode": null,
     "i18n": {
       "hu": {
-        "name": "kalocsdai rózsa rózsaszín",
-        "region": "kalocsa",
-        "complexity": "Egyszerű",
-        "type": "rózsa, virág",
-        "color": "rozsaszín, világosrozsaszín",
-        "description": ""
+        "név": "kalocsdai rózsa rózsaszín",
+        "régió": "kalocsa",
+        "összetettség": "Egyszerű",
+        "típus": "rózsa, virág",
+        "szín": "rozsaszín, világosrozsaszín",
+        "leírás": ""
       },
       "en": {
-        "name": "kalocsdai rózsa rózsaszín",
-        "region": "kalocsa",
+        "name": "Pink rose from Kalocsa",
+        "region": "Kalocsa",
         "complexity": "Simple",
-        "type": "rózsa, virág",
-        "color": "rozsaszín, világosrozsaszín",
+        "type": "rose, flower",
+        "color": "pink, light pink",
         "description": ""
       },
       "es": {
-        "name": "kalocsdai rózsa rózsaszín",
-        "region": "kalocsa",
-        "complexity": "Sencillo",
-        "type": "rózsa, virág",
-        "color": "rozsaszín, világosrozsaszín",
-        "description": ""
+        "nombre": "Rosa rosada de Kalocsa",
+        "zona": "Kalocsa",
+        "complejidad": "Sencillo",
+        "tipo": "rosa, flor",
+        "color": "rosado, rosado claro",
+        "descripción": ""
       }
     }
   },
@@ -202,28 +202,28 @@
     "gcode": "gcode/mst0pirdtr5zg.gcode",
     "i18n": {
       "hu": {
-        "name": "Harangvirág, dupla macskatalp",
-        "region": "Mezőkövesd, Matyó",
-        "complexity": "Közepes",
-        "type": "Virág, Levél",
-        "color": "piros, zöld, vörös, sárga",
-        "description": ""
+        "név": "Harangvirág, dupla macskatalp",
+        "régió": "Mezőkövesd, Matyó",
+        "összetettség": "Közepes",
+        "típus": "Virág, Levél",
+        "szín": "piros, zöld, vörös, sárga",
+        "leírás": ""
       },
       "en": {
-        "name": "Bellflower, Double Cat's Paw",
+        "name": "Harebell, Double Cat's Paw",
         "region": "Mezőkövesd, Matyó",
         "complexity": "Medium",
-        "type": "Virág, Levél",
-        "color": "piros, zöld, vörös, sárga",
+        "type": "flower, leaf",
+        "color": "red, dark red, green, yellow",
         "description": ""
       },
       "es": {
-        "name": "Campanilla, Doble Pata de Gato",
-        "region": "Mezőkövesd, Matyó",
-        "complexity": "Medio",
-        "type": "Virág, Levél",
-        "color": "piros, zöld, vörös, sárga",
-        "description": ""
+        "nombre": "Campanilla, Doble Pata de Gato",
+        "zona": "Mezőkövesd, Matyó",
+        "complejidad": "Medio",
+        "tipo": "flor, hoja",
+        "color": "rojo, rojo oscuro, verde, amarillo",
+        "descripción": ""
       }
     }
   }
