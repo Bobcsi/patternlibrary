@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mst0bef1uot6i",
+    "region": "kalocsa",
+    "complexity": "Egyszerű",
+    "type": "virág, rózsa",
+    "name": "Kalocsai rózsa",
+    "color": "piros, vörös",
+    "desc": "",
+    "svg": "assets/mst0bef1uot6i.svg",
+    "png": null,
+    "gcode": "gcode/mst0bef1uot6i.gcode"
+  },
+  {
+    "id": "mst0diyk81gvy",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "Egyszerű",
+    "type": "virág, tulipán",
+    "name": "Matyó Tulipán",
+    "color": "Piros, sárga, vörös",
+    "desc": "",
+    "svg": "assets/mst0diyk81gvy.svg",
+    "png": null,
+    "gcode": null
+  },
+  {
+    "id": "mst0i4odzr6y4",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "Közepes",
+    "type": "Virág, csokor, összetett motívum",
+    "name": "Forgórózsás csokor",
+    "color": "piros, sárga, kák, zöld",
+    "desc": "",
+    "svg": "assets/mst0i4odzr6y4.svg",
+    "png": null,
+    "gcode": null
+  },
+  {
+    "id": "mst0jtxjgmhkv",
+    "region": "KAlocsa",
+    "complexity": "Közepes",
+    "type": "virág, szár",
+    "name": "KAlocsai rózsa szárral",
+    "color": "piros, vörös, sötétzöls, világoszöld",
+    "desc": "",
+    "svg": "assets/mst0jtxjgmhkv.svg",
+    "png": null,
+    "gcode": "gcode/mst0jtxjgmhkv.gcode"
+  },
+  {
+    "id": "mst0nyucink7j",
+    "region": "kalocsa",
+    "complexity": "Egyszerű",
+    "type": "rózsa, virág",
+    "name": "kalocsdai rózsa rózsaszín",
+    "color": "rozsaszín, világosrozsaszín",
+    "desc": "",
+    "svg": "assets/mst0nyucink7j.svg",
+    "png": null,
+    "gcode": null
+  },
+  {
+    "id": "mst0pirdtr5zg",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "Közepes",
+    "type": "Virág, Levél",
+    "name": "Harangvirág, dupla macskatalp",
+    "color": "piros, zöld, vörös, sárga",
+    "desc": "",
+    "svg": "assets/mst0pirdtr5zg.svg",
+    "png": null,
+    "gcode": "gcode/mst0pirdtr5zg.gcode"
+  }
+]
