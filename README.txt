@@ -1,0 +1,1 @@
+V6: főszín #A11D13, világos #F8E2DC. Nyelvek: HU/EN/ES. A kezelőfelület, szűrők és adatlap elemei a választott nyelven jelennek meg.
