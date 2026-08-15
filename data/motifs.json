@@ -302,5 +302,43 @@
         "description": ""
       }
     }
+  },
+  {
+    "id": "matyolevel",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "Egyszerű",
+    "type": "levél",
+    "name": "tölgyfa levél",
+    "color": "zöld, sötét zöld",
+    "desc": "",
+    "svg": "assets/matyolevel.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "name": "tölgyfa levél",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Egyszerű",
+        "type": "levél",
+        "color": "zöld, sötétzöld",
+        "description": ""
+      },
+      "en": {
+        "name": "oak leaf",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Simple",
+        "type": "leaf",
+        "color": "green, dark green",
+        "description": ""
+      },
+      "es": {
+        "name": "Tulipán Matyó",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Sencillo",
+        "type": "flor, tulipán",
+        "color": "rojo, amarillo, rojo oscuro",
+        "description": ""
+      }
+    }
   }
 ]
