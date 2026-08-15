@@ -378,5 +378,43 @@
         "description": ""
       }
     }
+  },
+  {
+    "id": "matyokomplex",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "összetett",
+    "type": "Virág, levél, szár, inda",
+    "name": "Matyó komplex (tulipán)",
+    "color": "piros, sárga, kák, zöld",
+    "desc": "",
+    "svg": "assets/Matyokomplex.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "neve": "Matyó komplex (tulipán)",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "összetett",
+        "type": "Virág, levél, szár, inda",
+        "color": "piros, sárga, kék, zöld",
+        "description": ""
+      },
+      "en": {
+        "name": "Matyo tulip composition",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "complex",
+        "type": "flower, leaf",
+        "color": "red, yellow, blue, green",
+        "description": ""
+      },
+      "es": {
+        "name": "Ramo de Rosas Giratorias",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Medio",
+        "type": "flor, ramo, motivo complejo",
+        "color": "rojo, amarillo, azul, verde",
+        "description": ""
+      }
+    }
   }
 ]
