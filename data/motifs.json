@@ -264,5 +264,43 @@
         "description": ""
       }
     }
+  },
+  {
+    "id": "matyovirag",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "egyszerű",
+    "type": "Virág, levél, szár",
+    "name": "Macskatalp",
+    "color": "piros, sárga/kák, zöld",
+    "desc": "",
+    "svg": "assets/matyovirag.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "neve": "Macskatalp",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "wgyszerű",
+        "type": "Virág, levél, szár",
+        "color": "piros, sárga/kék, zöld",
+        "description": ""
+      },
+      "en": {
+        "name": "cat's paw",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "easy",
+        "type": "flower, leaf",
+        "color": "red, yellow/blue, green",
+        "description": ""
+      },
+      "es": {
+        "name": "Ramo de Rosas Giratorias",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Medio",
+        "type": "flor, ramo, motivo complejo",
+        "color": "rojo, amarillo, azul, verde",
+        "description": ""
+      }
+    }
   }
 ]
