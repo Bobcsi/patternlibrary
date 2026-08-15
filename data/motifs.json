@@ -342,14 +342,14 @@
     }
   },
   {
-    "id": "matyovirag",
+    "id": "duplamacskatalp",
     "region": "Mezőkövesd, Matyó",
     "complexity": "összetett",
     "type": "Virág, levél, szár",
     "name": "dupla Macskatalp (harangvirág)",
     "color": "piros, sárga, kák, zöld",
     "desc": "",
-    "svg": "assets/matyovirag.svg",
+    "svg": "assets/duplamacskatalp.svg",
     "png": null,
     "gcode": null,
     "i18n": {
