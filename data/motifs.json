@@ -1,13 +1,13 @@
 [
   {
-    "id": "mst0bef1uot6i",
+    "id": "kalocsaivirag",
     "region": "kalocsa",
     "complexity": "Egyszerű",
     "type": "virág, rózsa",
     "name": "Kalocsai rózsa",
     "color": "piros, vörös",
     "desc": "",
-    "svg": "assets/mst0bef1uot6i.svg",
+    "svg": "assets/kalocsaivirag.svg",
     "png": null,
     "gcode": "gcode/mst0bef1uot6i.gcode",
     "i18n": {
