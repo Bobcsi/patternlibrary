@@ -280,7 +280,7 @@
       "hu": {
         "neve": "Macskatalp",
         "region": "Mezőkövesd, Matyó",
-        "complexity": "wgyszerű",
+        "complexity": "egyszerű",
         "type": "Virág, levél, szár",
         "color": "piros, sárga/kék, zöld",
         "description": ""
@@ -337,6 +337,44 @@
         "complexity": "Sencillo",
         "type": "flor, tulipán",
         "color": "rojo, amarillo, rojo oscuro",
+        "description": ""
+      }
+    }
+  },
+  {
+    "id": "matyovirag",
+    "region": "Mezőkövesd, Matyó",
+    "complexity": "összetett",
+    "type": "Virág, levél, szár",
+    "name": "dupla Macskatalp (harangvirág)",
+    "color": "piros, sárga, kák, zöld",
+    "desc": "",
+    "svg": "assets/matyovirag.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "neve": "dupla Macskatalp (harangvirág)",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "összetett",
+        "type": "Virág, levél, szár",
+        "color": "piros, sárga, kék, zöld",
+        "description": ""
+      },
+      "en": {
+        "name": "cat's paw",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "complex",
+        "type": "flower, leaf",
+        "color": "red, yellow/blue, green",
+        "description": ""
+      },
+      "es": {
+        "name": "Ramo de Rosas Giratorias",
+        "region": "Mezőkövesd, Matyó",
+        "complexity": "Medio",
+        "type": "flor, ramo, motivo complejo",
+        "color": "rojo, amarillo, azul, verde",
         "description": ""
       }
     }
