@@ -190,31 +190,31 @@
     }
   },
   {
-    "id": "mst0pirdtr5zg",
-    "region": "Mezőkövesd, Matyó",
+    "id": "kalocsaipaprika",
+    "region": "Kalocsa",
     "complexity": "Közepes",
-    "type": "Virág, Levél",
-    "name": "Harangvirág, dupla macskatalp",
-    "color": "piros, zöld, vörös, sárga",
+    "type": "Paprika, csokor",
+    "name": "Kalocsai Paprika",
+    "color": "piros, zöld",
     "desc": "",
-    "svg": "assets/mst0pirdtr5zg.svg",
+    "svg": "assets/kalocsaipaprika.svg",
     "png": null,
     "gcode": "gcode/mst0pirdtr5zg.gcode",
     "i18n": {
       "hu": {
-        "name": "Harangvirág, dupla macskatalp",
-        "region": "Mezőkövesd, Matyó",
+        "name": "Kalocsai Paprika",
+        "region": "Kalocsa",
         "complexity": "Közepes",
-        "type": "Virág, Levél",
-        "color": "piros, zöld, vörös, sárga",
+        "type": "Paprika, csokor",
+        "color": "piros, zöld",
         "description": ""
       },
       "en": {
-        "name": "Harebell, Double Cat's Paw",
-        "region": "Mezőkövesd, Matyó",
+        "name": "papper from kalocsa",
+        "region": "kalocsa",
         "complexity": "Medium",
-        "type": "flower, leaf",
-        "color": "red, dark red, green, yellow",
+        "type": "papper, bouquet",
+        "color": "red, dark red, green",
         "description": ""
       },
       "es": {
