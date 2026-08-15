@@ -226,5 +226,43 @@
         "description": ""
       }
     }
+  },
+  {
+    "id": "buzsakitizenketosztatu",
+    "region": "Buzsák",
+    "complexity": "Egyszerű",
+    "type": "rozetta, virág",
+    "name": "Buzsáki vézás rozetta",
+    "color": "piros, kék, zöld",
+    "desc": "",
+    "svg": "assets/buzsakitizenketosztatu.svg",
+    "png": null,
+    "gcode": null,
+    "i18n": {
+      "hu": {
+        "name": "Buzsáki vézás rozetta",
+        "region": "Buzsák",
+        "complexity": "Egyszerű",
+        "type": "rozetta, virág",
+        "color": "piros, kék, zöld",
+        "description": ""
+      },
+      "en": {
+        "name": "rosette from buzsák (vézás)",
+        "region": "Buzsák",
+        "complexity": "Simple",
+        "type": "rosette, flower",
+        "color": "red, green, blue",
+        "description": ""
+      },
+      "es": {
+        "name": "Rosa rosada de Kalocsa",
+        "region": "Kalocsa",
+        "complexity": "Sencillo",
+        "type": "rosa, flor",
+        "color": "rosado, rosado claro",
+        "description": ""
+      }
+    }
   }
 ]
