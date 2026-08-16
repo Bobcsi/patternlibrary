@@ -56,6 +56,7 @@ header .wrap {
 
 .top b {
   letter-spacing: 0.13em;
+   color: #fef2f0
 }
 
 
@@ -93,6 +94,7 @@ nav button:hover {
   font-size: 0.78rem;
   letter-spacing: 0.18em;
   font-weight: 800;
+   color: #fef2f0
 }
 
 h1,
