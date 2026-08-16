@@ -1,1 +1,201 @@
-<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hímzés katalógus</title><link rel="stylesheet" href="style.css"></head><body><header><div class="wrap"><div class="top"><b>HÍMZÉS KATALÓGUS</b><nav id="languageSwitcher"><button data-lang="hu">HU</button><button data-lang="en">EN</button><button data-lang="es">ES</button></nav></div><div class="ey">INGYENES MINTAKATALÓGUS</div><h1 id="pageTitle">Mintakatalógus</h1><p id="pageIntro">Magyar népi hímzés motívumai</p><div id="qr"></div></div></header><main class="wrap"><section class="filters"><input id="search"><select id="regionFilter"></select><select id="complexityFilter"></select><select id="typeFilter"></select></section><section id="catalog" class="catalog"></section></main><div id="modal" hidden><div class="back" onclick="closeM()"></div><article class="modal"><button class="close" onclick="closeM()">×</button><div id="detail"></div></article></div><script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="hu">
+
+<head>
+
+  <!-- ========================================
+       ALAP BEÁLLÍTÁSOK
+  ========================================= -->
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Hímzés katalógus</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+  <!-- ========================================
+       FEJLÉC
+  ========================================= -->
+
+  <header>
+
+    <div class="wrap">
+
+
+      <!-- ======================================
+           FELSŐ SÁV
+      ======================================= -->
+
+      <div class="top">
+
+        <!-- Weboldal neve -->
+        <b>HÍMZÉS KATALÓGUS</b>
+
+
+        <!-- Nyelvválasztó -->
+        <nav id="languageSwitcher">
+
+          <button data-lang="hu">
+            HU
+          </button>
+
+          <button data-lang="en">
+            EN
+          </button>
+
+          <button data-lang="es">
+            ES
+          </button>
+
+        </nav>
+
+      </div>
+
+
+      <!-- ======================================
+           FEJLÉC SZÖVEGE
+      ======================================= -->
+
+      <div class="ey">
+        INGYENES MINTAKATALÓGUS
+      </div>
+
+
+      <!-- Főcím -->
+      <h1 id="pageTitle">
+        Mintakatalógus
+      </h1>
+
+
+      <!-- Alcím -->
+      <p id="pageIntro">
+        Magyar népi hímzés motívumai
+      </p>
+
+
+      <!-- QR-kód helye -->
+      <div id="qr"></div>
+
+
+    </div>
+
+  </header>
+
+
+  <!-- ========================================
+       FŐ TARTALOM
+  ========================================= -->
+
+  <main class="wrap">
+
+
+    <!-- ======================================
+         KERESÉS ÉS SZŰRŐK
+    ======================================= -->
+
+    <section class="filters">
+
+
+      <!-- Kereső -->
+      <input
+        id="search"
+        type="search"
+      >
+
+
+      <!-- Tájegység -->
+      <select id="regionFilter"></select>
+
+
+      <!-- Komplexitás -->
+      <select id="complexityFilter"></select>
+
+
+      <!-- Típus -->
+      <select id="typeFilter"></select>
+
+
+    </section>
+
+
+    <!-- ======================================
+         MINTAKATALÓGUS
+    ======================================= -->
+
+    <section
+      id="catalog"
+      class="catalog"
+    ></section>
+
+
+  </main>
+
+
+  <!-- ========================================
+       MINTA ADATLAP / MODAL
+  ========================================= -->
+
+  <div
+    id="modal"
+    hidden
+  >
+
+    <!-- Sötét háttér -->
+    <div
+      class="back"
+      onclick="closeM()"
+    ></div>
+
+
+    <!-- Adatlap ablaka -->
+    <article class="modal">
+
+
+      <!-- Bezárás -->
+      <button
+        class="close"
+        onclick="closeM()"
+      >
+        ×
+      </button>
+
+
+      <!--
+        Ide tölti be az app.js
+        az adott minta adatait
+      -->
+      <div id="detail"></div>
+
+
+    </article>
+
+  </div>
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ========================================= -->
+
+  <!-- QR-kód generáló könyvtár -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+
+
+  <!-- Saját JavaScript -->
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>
