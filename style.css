@@ -98,7 +98,8 @@ nav button:hover {
 h1,
 h2,
 h3 {
-  font-family: Georgia, serif;
+   font-family: Georgia, serif;
+   color: #fef2f0
 }
 
 h1 {
