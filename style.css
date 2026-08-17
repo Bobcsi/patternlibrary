@@ -64,12 +64,8 @@ header .wrap {
    NYELVVÁLASZTÓ
 ======================================== */
 
-nav {
-  display: flex;
-  gap: 6px;
-}
+nav button{
 
-nav button {
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
@@ -77,19 +73,38 @@ nav button {
   padding: 7px 11px;
   font-weight: 800;
   cursor: pointer;
+
+transition:
+transform .2s ease,
+box-shadow .2s ease,
+background .2s ease;
+
 }
 
-nav button.active,
-nav button:hover {
+nav button:hover{
+
+transform:translateY(-3px);
+
+}
+
+nav button:active{
+
+transform:scale(.95);
+
+}
+
+nav button.active{
+
   background: #fff;
   color: var(--red);
-}
 
+}
 
 /* ========================================
    FEJLÉC SZÖVEGE
 ======================================== */
 
+p,
 .ey {
   font-size: 0.78rem;
   letter-spacing: 0.18em;
@@ -103,6 +118,8 @@ h3 {
    font-family: Georgia, serif;
    color: #fef2f0
 }
+
+
 
 h1 {
   font-size: clamp(2.7rem, 7vw, 5rem);
@@ -171,12 +188,16 @@ h1 {
   cursor: pointer;
 
   box-shadow: 0 5px 16px #a11d1315;
+  transition:
+  transform .2s ease,
+  box-shadow .2s ease,
+  background .2s ease;
 }
 
 .card:hover {
-  border-color: var(--red);
-  transform: translateY(-3px);
+  transform: translateY(-13px);
 }
+
 
 
 /* ========================================

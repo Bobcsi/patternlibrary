@@ -1,7 +1,7 @@
 [
   {
     "id": "kalocsaivirag",
-    "region": "kalocsa",
+    "region": "Kalocsa",
     "complexity": "Egyszerű",
     "type": "virág, rózsa",
     "name": "Kalocsai rózsa",
@@ -79,7 +79,7 @@
     "id": "mst0i4odzr6y4",
     "region": "Mezőkövesd, Matyó",
     "complexity": "Közepes",
-    "type": "Virág, csokor, összetett motívum",
+    "type": "Virág, csokor, Összetett motívum",
     "name": "Forgórózsás csokor",
     "color": "piros, sárga, kák, zöld",
     "desc": "",
@@ -91,7 +91,7 @@
         "neve": "Forgórózsás csokor",
         "region": "Mezőkövesd, Matyó",
         "complexity": "Közepes",
-        "type": "Virág, csokor, összetett motívum",
+        "type": "Virág, csokor, Összetett motívum",
         "color": "piros, sárga, kék, zöld",
         "description": ""
       },
@@ -115,10 +115,10 @@
   },
   {
     "id": "mst0jtxjgmhkv",
-    "region": "KAlocsa",
+    "region": "Kalocsa",
     "complexity": "Közepes",
     "type": "virág, szár",
-    "name": "KAlocsai rózsa szárral",
+    "name": "Kalocsai rózsa szárral",
     "color": "piros, vörös, sötétzöls, világoszöld",
     "desc": "",
     "svg": "assets/mst0jtxjgmhkv.svg",
@@ -153,7 +153,7 @@
   },
   {
     "id": "mst0nyucink7j",
-    "region": "kalocsa",
+    "region": "Kalocsa",
     "complexity": "Egyszerű",
     "type": "rózsa, virág",
     "name": "kalocsdai rózsa rózsacolor",
@@ -165,7 +165,7 @@
     "i18n": {
       "hu": {
         "name": "kalocsdai rózsa rózsacolor",
-        "region": "kalocsa",
+        "region": "Kalocsa",
         "complexity": "Egyszerű",
         "type": "rózsa, virág",
         "color": "rozsacolor, világosrozsacolor",
@@ -210,8 +210,8 @@
         "description": ""
       },
       "en": {
-        "name": "papper from kalocsa",
-        "region": "kalocsa",
+        "name": "Papper from kalocsa",
+        "region": "Kalocsa",
         "complexity": "Medium",
         "type": "papper, bouquet",
         "color": "red, dark red, green",
@@ -219,7 +219,7 @@
       },
       "es": {
         "name": "Campanilla, Doble Pata de Gato",
-        "region": "Mezőkövesd, Matyó",
+        "region": "Kalocsa",
         "complexity": "Medio",
         "type": "flor, hoja",
         "color": "rojo, rojo oscuro, verde, amarillo",
@@ -268,7 +268,7 @@
   {
     "id": "matyovirag",
     "region": "Mezőkövesd, Matyó",
-    "complexity": "egyszerű",
+    "complexity": "Egyszerű",
     "type": "Virág, levél, szár",
     "name": "Macskatalp",
     "color": "piros, sárga/kák, zöld",
@@ -280,7 +280,7 @@
       "hu": {
         "neve": "Macskatalp",
         "region": "Mezőkövesd, Matyó",
-        "complexity": "egyszerű",
+        "complexity": "Egyszerű",
         "type": "Virág, levél, szár",
         "color": "piros, sárga/kék, zöld",
         "description": ""
@@ -344,7 +344,7 @@
   {
     "id": "duplamacskatalp",
     "region": "Mezőkövesd, Matyó",
-    "complexity": "összetett",
+    "complexity": "Összetett",
     "type": "Virág, levél, szár",
     "name": "dupla Macskatalp (harangvirág)",
     "color": "piros, sárga, kák, zöld",
@@ -356,7 +356,7 @@
       "hu": {
         "neve": "dupla Macskatalp (harangvirág)",
         "region": "Mezőkövesd, Matyó",
-        "complexity": "összetett",
+        "complexity": "Összetett",
         "type": "Virág, levél, szár",
         "color": "piros, sárga, kék, zöld",
         "description": ""
@@ -382,7 +382,7 @@
   {
     "id": "Matyokomplex",
     "region": "Mezőkövesd, Matyó",
-    "complexity": "összetett",
+    "complexity": "Összetett",
     "type": "Virág, levél, szár, inda",
     "name": "Matyó komplex (tulipán)",
     "color": "piros, sárga, kák, zöld",
@@ -394,7 +394,7 @@
       "hu": {
         "neve": "Matyó komplex (tulipán)",
         "region": "Mezőkövesd, Matyó",
-        "complexity": "összetett",
+        "complexity": "Összetett",
         "type": "Virág, levél, szár, inda",
         "color": "piros, sárga, kék, zöld",
         "description": ""
