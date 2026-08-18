@@ -1,18 +1,387 @@
-const L={
-hu:{title:"Mintakatalógus",intro:"Magyar népi hímzés motívumai",search:"Keresés név, tájegység vagy típus szerint",regions:"Minden tájegység",complex:"Minden komplexitás",types:"Minden típus",cx:"Komplexitás",type:"Típus",color:"Szín",download:"G-code letöltése",nog:"Ehhez a mintához nincs G-code.",png:"Kiegészítő PNG kép"},
-en:{title:"Pattern Library",intro:"Hungarian folk embroidery motifs",search:"Search by name, region or type",regions:"All regions",complex:"All complexity levels",types:"All types",cx:"Complexity",type:"Type",color:"Color",download:"Download G-code",nog:"No G-code is available for this pattern.",png:"Additional PNG image"},
-es:{title:"Catálogo de motivos",intro:"Motivos de bordado folclórico húngaro",search:"Buscar por nombre, región o tipo",regions:"Todas las regiones",complex:"Todos los niveles de complejidad",types:"Todos los tipos",cx:"Complejidad",type:"Tipo",color:"Color",download:"Descargar G-code",nog:"No hay G-code disponible para este motivo.",png:"Imagen PNG adicional"}};
-const C={hu:{Egyszerű:"Egyszerű",Közepes:"Közepes",Összetett:"Összetett"},en:{Egyszerű:"Simple",Közepes:"Medium",Összetett:"Complex"},es:{Egyszerű:"Sencillo",Közepes:"Medio",Összetett:"Complejo"}};
-const T={hu:{virág:"virág",levél:"levél",szegély:"szegély",állat:"állat"},en:{virág:"flower",levél:"leaf",szegély:"border",állat:"animal"},es:{virág:"flor",levél:"hoja",szegély:"cenefa",állat:"animal"}};
-const K={hu:{piros:"piros",zöld:"zöld",kék:"kék",rózsaszín:"rózsaszín"},en:{piros:"red",zöld:"green",kék:"blue",rózsaszín:"pink"},es:{piros:"rojo",zöld:"verde",kék:"azul",rózsaszín:"rosa"}};
-let ms=[],lang=localStorage.getItem("catalogLanguage")||"hu";
-const $=id=>document.getElementById(id), esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function tr(m,k){const d=m.i18n?.[lang]||m.i18n?.hu||{};if(k==="cx"||k==="complexity")return d.complexity||m.complexity||"";if(k==="type")return d.type||m.type||"";if(k==="color")return d.color||m.color||"";if(k==="region")return d.region||m.region||"";if(k==="description")return d.description||"";return d[k]||m[k]||""}
-function setLang(x){lang=x;localStorage.setItem("catalogLanguage",x);document.documentElement.lang=x;document.querySelectorAll("[data-lang]").forEach(b=>b.classList.toggle("active",b.dataset.lang===x));render()}
-function render(){let l=L[lang];$("pageTitle").textContent=l.title;$("pageIntro").textContent=l.intro;$("search").placeholder=l.search;$("regionFilter").options[0].text=l.regions;$("complexityFilter").options[0].text=l.complex;$("typeFilter").options[0].text=l.types;
-let q=$("search").value.toLowerCase(),r=$("regionFilter").value,c=$("complexityFilter").value,t=$("typeFilter").value;
-$("catalog").innerHTML=ms.filter(m=>(!q||[tr(m,"name"),m.region,m.type,m.color].join(" ").toLowerCase().includes(q))&&(!r||m.region===r)&&(!c||m.complexity===c)&&(!t||m.type===t)).map(m=>`<article class="card" onclick="openM('${m.id}')"><div class="art"><img src="${m.svg}" alt=""></div><div class="tag">${esc(tr(m,"region"))}</div><h3>${esc(tr(m,"name"))}</h3><div>${esc(tr(m,"type"))} · ${esc(tr(m,"color"))}</div><small>${l.cx}: ${esc(tr(m,"cx"))}</small></article>`).join("")}
-function filters(){let rs=[...new Set(ms.map(m=>m.region))].sort(),cs=[...new Set(ms.map(m=>m.complexity))],ts=[...new Set(ms.map(m=>m.type))];$("regionFilter").innerHTML='<option value="">'+L[lang].regions+'</option>'+rs.map(x=>`<option>${esc(x)}</option>`).join("");$("complexityFilter").innerHTML='<option value="">'+L[lang].complex+'</option>'+cs.map(x=>`<option value="${esc(x)}">${esc(C[lang][x]||x)}</option>`).join("");$("typeFilter").innerHTML='<option value="">'+L[lang].types+'</option>'+ts.map(x=>`<option value="${esc(x)}">${esc(T[lang][x]||x)}</option>`).join("")}
-function openM(id){let m=ms.find(x=>x.id===id),l=L[lang];$("detail").innerHTML=`<div class="detail"><div><img class="mainImg" src="${m.svg}">${m.png?`<div class="additional"><h3>${l.png}</h3><img src="${m.png}"></div>`:""}</div><div><div class="tag">${esc(tr(m,"region"))}</div><h2>${esc(tr(m,"name"))}</h2><p><b>${l.cx}:</b> ${esc(tr(m,"cx"))}<br><b>${l.type}:</b> ${esc(tr(m,"type"))}<br><b>${l.color}:</b> ${esc(tr(m,"color"))}</p>${m.gcode?`<a class="btn" href="${m.gcode}" download>${l.download}</a>`:`<p>${l.nog}</p>`}</div></div>`;$("modal").hidden=false}
-function closeM(){$("modal").hidden=true}
-fetch("data/motifs.json").then(r=>r.json()).then(x=>{ms=x;filters();["search","regionFilter","complexityFilter","typeFilter"].forEach(id=>$(id).oninput=render);document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>{filters();setLang(b.dataset.lang)});setLang(lang);if(window.QRCode)QRCode.toCanvas(location.href,{width:120,margin:1},(e,c)=>{if(!e)$("qr").appendChild(c)})})
+const L = {
+  hu: {
+    title: "Mintakatalógus",
+    intro: "Magyar népi hímzés motívumai",
+    search: "Keresés név, tájegység vagy típus szerint",
+    regions: "Minden tájegység",
+    complex: "Minden komplexitás",
+    types: "Minden típus",
+    cx: "Komplexitás",
+    type: "Típus",
+    color: "Szín",
+    download: "G-code letöltése",
+    nog: "Ehhez a mintához nincs G-code.",
+    png: "Kiegészítő PNG kép"
+  },
+
+  en: {
+    title: "Pattern Library",
+    intro: "Hungarian folk embroidery motifs",
+    search: "Search by name, region or type",
+    regions: "All regions",
+    complex: "All complexity levels",
+    types: "All types",
+    cx: "Complexity",
+    type: "Type",
+    color: "Color",
+    download: "Download G-code",
+    nog: "No G-code is available for this pattern.",
+    png: "Additional PNG image"
+  },
+
+  es: {
+    title: "Catálogo de motivos",
+    intro: "Motivos de bordado folclórico húngaro",
+    search: "Buscar por nombre, región o tipo",
+    regions: "Todas las regiones",
+    complex: "Todos los niveles de complejidad",
+    types: "Todos los tipos",
+    cx: "Complejidad",
+    type: "Tipo",
+    color: "Color",
+    download: "Descargar G-code",
+    nog: "No hay G-code disponible para este motivo.",
+    png: "Imagen PNG adicional"
+  }
+};
+
+const C = {
+  hu: {
+    Egyszerű: "Egyszerű",
+    Közepes: "Közepes",
+    Összetett: "Összetett"
+  },
+
+  en: {
+    Egyszerű: "Simple",
+    Közepes: "Medium",
+    Összetett: "Complex"
+  },
+
+  es: {
+    Egyszerű: "Sencillo",
+    Közepes: "Medio",
+    Összetett: "Complejo"
+  }
+};
+
+const T = {
+  hu: {
+    virág: "virág",
+    levél: "levél",
+    szegély: "szegély",
+    állat: "állat"
+  },
+
+  en: {
+    virág: "flower",
+    levél: "leaf",
+    szegély: "border",
+    állat: "animal"
+  },
+
+  es: {
+    virág: "flor",
+    levél: "hoja",
+    szegély: "cenefa",
+    állat: "animal"
+  }
+};
+
+const K = {
+  hu: {
+    piros: "piros",
+    zöld: "zöld",
+    kék: "kék",
+    rózsaszín: "rózsaszín"
+  },
+
+  en: {
+    piros: "red",
+    zöld: "green",
+    kék: "blue",
+    rózsaszín: "pink"
+  },
+
+  es: {
+    piros: "rojo",
+    zöld: "verde",
+    kék: "azul",
+    rózsaszín: "rosa"
+  }
+};
+
+let ms = [];
+let lang = localStorage.getItem("catalogLanguage") || "hu";
+
+const $ = id => document.getElementById(id);
+
+const esc = s =>
+  String(s ?? "").replace(
+    /[&<>"]/g,
+    c => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;"
+    }[c])
+  );
+
+function tr(m, k) {
+  const d = m.i18n?.[lang] || m.i18n?.hu || {};
+
+  if (k === "cx" || k === "complexity") {
+    return d.complexity || m.complexity || "";
+  }
+
+  if (k === "type") {
+    return d.type || m.type || "";
+  }
+
+  if (k === "color") {
+    return d.color || m.color || "";
+  }
+
+  if (k === "region") {
+    return d.region || m.region || "";
+  }
+
+  if (k === "description") {
+    return d.description || "";
+  }
+
+  return d[k] || m[k] || "";
+}
+
+function setLang(x) {
+  lang = x;
+
+  localStorage.setItem("catalogLanguage", x);
+  document.documentElement.lang = x;
+
+  document
+    .querySelectorAll("[data-lang]")
+    .forEach(b =>
+      b.classList.toggle("active", b.dataset.lang === x)
+    );
+
+  render();
+}
+
+function render() {
+  const l = L[lang];
+
+  $("pageTitle").textContent = l.title;
+  $("pageIntro").textContent = l.intro;
+  $("search").placeholder = l.search;
+
+  $("regionFilter").options[0].text = l.regions;
+  $("complexityFilter").options[0].text = l.complex;
+  $("typeFilter").options[0].text = l.types;
+
+  const q = $("search").value.toLowerCase();
+  const r = $("regionFilter").value;
+  const c = $("complexityFilter").value;
+  const t = $("typeFilter").value;
+
+  $("catalog").innerHTML = ms
+    .filter(
+      m =>
+        (
+          !q ||
+          [tr(m, "name"), m.region, m.type, m.color]
+            .join(" ")
+            .toLowerCase()
+            .includes(q)
+        ) &&
+        (!r || m.region === r) &&
+        (!c || m.complexity === c) &&
+        (!t || m.type === t)
+    )
+    .map(
+      m => `
+        <article
+          class="card"
+          onclick="openM('${m.id}')"
+        >
+          <div class="art">
+            <img src="${m.svg}" alt="">
+          </div>
+
+          <div class="tag">
+            ${esc(tr(m, "region"))}
+          </div>
+
+          <h3>
+            ${esc(tr(m, "name"))}
+          </h3>
+
+          <div>
+            ${esc(tr(m, "type"))}
+            ·
+            ${esc(tr(m, "color"))}
+          </div>
+
+          <small>
+            ${l.cx}: ${esc(tr(m, "cx"))}
+          </small>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function filters() {
+  const rs = [...new Set(ms.map(m => m.region))].sort();
+  const cs = [...new Set(ms.map(m => m.complexity))];
+  const ts = [...new Set(ms.map(m => m.type))];
+
+  $("regionFilter").innerHTML =
+    '<option value="">' +
+    L[lang].regions +
+    "</option>" +
+    rs
+      .map(x => `<option>${esc(x)}</option>`)
+      .join("");
+
+  $("complexityFilter").innerHTML =
+    '<option value="">' +
+    L[lang].complex +
+    "</option>" +
+    cs
+      .map(
+        x =>
+          `<option value="${esc(x)}">${esc(
+            C[lang][x] || x
+          )}</option>`
+      )
+      .join("");
+
+  $("typeFilter").innerHTML =
+    '<option value="">' +
+    L[lang].types +
+    "</option>" +
+    ts
+      .map(
+        x =>
+          `<option value="${esc(x)}">${esc(
+            T[lang][x] || x
+          )}</option>`
+      )
+      .join("");
+}
+
+function openM(id) {
+  const m = ms.find(x => x.id === id);
+  const l = L[lang];
+
+  $("detail").innerHTML = `
+    <div class="detail">
+      <div>
+        <img
+          class="mainImg"
+          src="${m.svg}"
+        >
+
+        ${
+          m.png
+            ? `
+              <div class="additional">
+                <h3>${l.png}</h3>
+                <img src="${m.png}">
+              </div>
+            `
+            : ""
+        }
+      </div>
+
+      <div>
+        <div class="tag">
+          ${esc(tr(m, "region"))}
+        </div>
+
+        <h2>
+          ${esc(tr(m, "name"))}
+        </h2>
+
+        <p>
+          <b>${l.cx}:</b>
+          ${esc(tr(m, "cx"))}
+          <br>
+
+          <b>${l.type}:</b>
+          ${esc(tr(m, "type"))}
+          <br>
+
+          <b>${l.color}:</b>
+          ${esc(tr(m, "color"))}
+        </p>
+
+        ${
+          m.gcode
+            ? `
+              <a
+                class="btn"
+                href="${m.gcode}"
+                download
+              >
+                ${l.download}
+              </a>
+            `
+            : `
+              <p>${l.nog}</p>
+            `
+        }
+      </div>
+    </div>
+  `;
+
+  $("modal").hidden = false;
+}
+
+function closeM() {
+  $("modal").hidden = true;
+}
+
+fetch("data/motifs.json")
+  .then(r => r.json())
+  .then(x => {
+    ms = x;
+
+    filters();
+
+    [
+      "search",
+      "regionFilter",
+      "complexityFilter",
+      "typeFilter"
+    ].forEach(id => {
+      $(id).oninput = render;
+    });
+
+    document
+      .querySelectorAll("[data-lang]")
+      .forEach(b => {
+        b.onclick = () => {
+          filters();
+          setLang(b.dataset.lang);
+        };
+      });
+
+    setLang(lang);
+
+    if (window.QRCode) {
+      QRCode.toCanvas(
+        location.href,
+        {
+          width: 120,
+          margin: 1
+        },
+        (e, c) => {
+          if (!e) {
+            $("qr").appendChild(c);
+          }
+        }
+      );
+    }
+  });
