@@ -140,6 +140,7 @@ h1 {
   border-radius: 14px;
 
   display: flex;
+  
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -186,16 +187,36 @@ h1 {
   padding: 14px;
 
   cursor: pointer;
+  backface-visibility: hidden;
 
   box-shadow: 0 5px 16px #a11d1315;
   transition:
-  transform .2s ease,
-  box-shadow .2s ease,
-  background .2s ease;
+  transform .7s ease,
+  box-shadow .7s ease,
+  background .7s ease;
 }
 
 .card:hover {
-  transform: translateY(-13px);
+  transform: rotateY(180deg);
+}
+
+.card-front 
+{
+  display: grid;
+  place-items: center;
+
+  transition: transform .7s ease;
+  transform-style: preserve-3d;
+}
+
+.card-back {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-items: center;
+
+  transform: rotateY(180deg);
 }
 
 
@@ -253,7 +274,7 @@ h1 {
    ADATLAP – HÁTTÉR
 ======================================== */
 
-.back {
+.datasheet {
   position: fixed;
   inset: 0;
 
