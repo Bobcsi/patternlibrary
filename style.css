@@ -104,7 +104,11 @@ nav button.active{
    FEJLÉC SZÖVEGE
 ======================================== */
 
-p,
+p
+{
+  font-family: Georgia, serif;
+  color: var(--red);
+}
 .ey {
   font-size: 0.78rem;
   letter-spacing: 0.18em;
@@ -113,17 +117,26 @@ p,
 }
 
 h1,
-h2,
-h3 {
+h2 {
    font-family: Georgia, serif;
    color: #fef2f0
 }
 
-
+h3
+{
+  font-family: Georgia, serif;
+  color: var(--red);
+}
 
 h1 {
   font-size: clamp(2.7rem, 7vw, 5rem);
   margin: 0.15em 0;
+}
+h4 {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  font-weight: 800;
+  color: #fef2f0
 }
 
 
@@ -191,7 +204,7 @@ h1 {
 
   cursor: pointer;
 
-  box-shadow: 0 5px 16px #a11d1315;
+  box-shadow: 0 10px 20px #a11d1315;
   transition: box-shadow .3s ease;
 
   /* establishes 3D space for the flip */
